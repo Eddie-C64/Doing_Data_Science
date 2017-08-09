@@ -1,4 +1,5 @@
 # Author: Eduardo Carrasco Jr.
+```{r }
 cat("/014")
 nyt_file1 = read.csv(file.choose())
 nyt_file1
@@ -9,6 +10,7 @@ summary(nyt_file1)
 
 # Categorize the age groups
 nyt_file1$agecat <-cut(nyt_file1$Age,c(-Inf,0,18,24,34,44,54,64,Inf))
+```
 
 # Set the brackets
 install.packages("doBy")
